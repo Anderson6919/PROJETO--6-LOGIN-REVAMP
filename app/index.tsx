@@ -9,17 +9,17 @@ export default function App() {
   const [password, setPassword] = useState("")
 
   //3° requisito
-  const [adminPassword, setAdminPassword] = useState("111111")
+  const [adminPassword, setAdminPassword] = useState("254789")
 
   //4° requisito
   const [userEmail,setUserEmail] = useState('andin@gmail.com')
   const [userName,setUserName] = useState('ANDERSON SILVA')
   const [userBirthday,setUserBirthday] = useState('10/06')
-  const [userPassword, setUserPassword] = useState('111111')
+  const [userPassword, setUserPassword] = useState('254789')
   
 
   const handleLogin = () => {
-    if (email === "andin@gmail.com" && password === 111111) {
+    if (email === "andin@gmail.com" && password === 254789) {
       alert("Login successful")
       setEmail("")
       setPassword("")
@@ -63,7 +63,7 @@ export default function App() {
   return (
     <SafeAreaView >
         <View style={styles.container}>
-          <Image style={styles.image} source={require("../assets/andin.jpg")}/>
+          <Image style={styles.image} source={require("../assets/image.png")}/>
           <Text style={styles.title}>Sistema de Login</Text>
           <Text style={styles.subtitle}>Bem vindo(a)! Digite seus dados abaixo.</Text>
           <View>
