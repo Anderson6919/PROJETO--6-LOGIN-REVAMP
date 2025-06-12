@@ -9,17 +9,17 @@ export default function App() {
   const [password, setPassword] = useState("")
 
   //3° requisito
-  const [adminPassword, setAdminPassword] = useState("656565")
+  const [adminPassword, setAdminPassword] = useState("111111")
 
   //4° requisito
-  const [userEmail,setUserEmail] = useState('nicolas.felipe@aluno')
-  const [userName,setUserName] = useState('Nicolas Felipe')
-  const [userBirthday,setUserBirthday] = useState('03/08')
-  const [userPassword, setUserPassword] = useState('656565')
+  const [userEmail,setUserEmail] = useState('andin@gmail.com')
+  const [userName,setUserName] = useState('ANDERSON SILVA')
+  const [userBirthday,setUserBirthday] = useState('10/06')
+  const [userPassword, setUserPassword] = useState('111111')
   
 
   const handleLogin = () => {
-    if (email === "nicolas.felipe@aluno" && password === 656565) {
+    if (email === "andin@gmail.com" && password === 111111) {
       alert("Login successful")
       setEmail("")
       setPassword("")
@@ -63,7 +63,7 @@ export default function App() {
   return (
     <SafeAreaView >
         <View style={styles.container}>
-          <Image style={styles.image} source={require("../assets/image.png")}/>
+          <Image style={styles.image} source={require("../assets/andin.jpg")}/>
           <Text style={styles.title}>Sistema de Login</Text>
           <Text style={styles.subtitle}>Bem vindo(a)! Digite seus dados abaixo.</Text>
           <View>
@@ -88,7 +88,7 @@ export default function App() {
           <Pressable style={styles.forgottenPassword} onPress={forgottenPassword}>Esqueci minha senha</Pressable>
           <Pressable style={styles.login} onPress={handleLogin} ><Text style={styles.textLogin} >Entrar</Text></Pressable>
           <Text style={styles.footer} >Não tem uma conta?<Pressable onPress={changeAccount}><Text style={styles.register}>Cadastre-se</Text></Pressable></Text>
-          <Text style={styles.creator}>Criado por Nicolas Felipe</Text>
+          <Text style={styles.creator}>Criado por ANDERSON SILVA</Text>
         </View>
     </SafeAreaView>
   )
